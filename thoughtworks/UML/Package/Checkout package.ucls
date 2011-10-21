@@ -1,0 +1,44 @@
+<class-diagram version="1.0.4" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
+  <package id="1" language="java" name="checkout" project="thoughtworks" file="/thoughtworks/src/checkout" 
+    binary="false">    
+    <position height="-1" width="-1" x="248" y="60"/>  
+  </package>  
+  <class id="2" corner="BOTTOM_RIGHT" language="java" name="checkout.CheckOutCounter" project="thoughtworks" 
+    file="/thoughtworks/src/checkout/CheckOutCounter.java" binary="false">    
+    <position height="-1" width="-1" x="260" y="470"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="3" corner="BOTTOM_RIGHT" language="java" name="checkout.Printer" project="thoughtworks" 
+    file="/thoughtworks/src/checkout/Printer.java" binary="false">    
+    <position height="-1" width="-1" x="654" y="470"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <interface id="4" corner="BOTTOM_RIGHT" language="java" name="checkout.CheckOutCounterIntf" project="thoughtworks" 
+    file="/thoughtworks/src/checkout/CheckOutCounterIntf.java" binary="false">    
+    <position height="-1" width="-1" x="260" y="207"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <realization>    
+    <end type="SOURCE" nodeId="2"/>    
+    <end type="TARGET" nodeId="4"/>  
+  </realization>  
+  <dependency>    
+    <end type="SOURCE" nodeId="2"/>    
+    <end type="TARGET" nodeId="3"/>  
+  </dependency>  
+  <classifier-display autosize="true" package="true" initial-value="false" signature="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

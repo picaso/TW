@@ -1,0 +1,32 @@
+<class-diagram version="1.0.4" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
+  <package id="1" language="java" name="shoppingcart" project="thoughtworks" file="/thoughtworks/src/shoppingcart" 
+    binary="false">    
+    <position height="-1" width="-1" x="281" y="100"/>  
+  </package>  
+  <class id="2" corner="BOTTOM_RIGHT" language="java" name="shoppingcart.ShoppingCart" project="thoughtworks" 
+    file="/thoughtworks/src/shoppingcart/ShoppingCart.java" binary="false">    
+    <position height="-1" width="-1" x="280" y="372"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <interface id="3" corner="BOTTOM_RIGHT" language="java" name="shoppingcart.ShoppingCartIntf" project="thoughtworks" 
+    file="/thoughtworks/src/shoppingcart/ShoppingCartIntf.java" binary="false">    
+    <position height="-1" width="-1" x="280" y="224"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <realization>    
+    <end type="SOURCE" nodeId="2"/>    
+    <end type="TARGET" nodeId="3"/>  
+  </realization>  
+  <classifier-display autosize="true" package="true" initial-value="true" signature="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

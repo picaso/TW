@@ -1,0 +1,44 @@
+<class-diagram version="1.0.4" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
+  <interface id="1" corner="BOTTOM_RIGHT" language="java" name="calculator.CalculatorIntf" project="thoughtworks" 
+    file="/thoughtworks/src/calculator/CalculatorIntf.java" binary="false">    
+    <position height="-1" width="-1" x="234" y="125"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <class id="2" corner="BOTTOM_RIGHT" language="java" name="calculator.Category" project="thoughtworks" 
+    file="/thoughtworks/src/calculator/Category.java" binary="false">    
+    <position height="-1" width="-1" x="234" y="433"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="3" corner="BOTTOM_RIGHT" language="java" name="calculator.SalesTaxCalc" project="thoughtworks" 
+    file="/thoughtworks/src/calculator/SalesTaxCalc.java" binary="false">    
+    <position height="-1" width="-1" x="235" y="270"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <package id="4" language="java" name="calculator" project="thoughtworks" file="/thoughtworks/src/calculator" 
+    binary="false">    
+    <position height="-1" width="-1" x="235" y="49"/>  
+  </package>  
+  <dependency>    
+    <end type="SOURCE" nodeId="3"/>    
+    <end type="TARGET" nodeId="2"/>  
+  </dependency>  
+  <realization>    
+    <end type="SOURCE" nodeId="3"/>    
+    <end type="TARGET" nodeId="1"/>  
+  </realization>  
+  <classifier-display autosize="true" package="true" initial-value="true" signature="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

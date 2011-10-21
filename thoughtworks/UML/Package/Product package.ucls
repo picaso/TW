@@ -1,0 +1,43 @@
+<class-diagram version="1.0.4" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
+  <package id="1" language="java" name="product" project="thoughtworks" file="/thoughtworks/src/product" binary="false">    
+    <position height="-1" width="-1" x="374" y="59"/>  
+  </package>  
+  <class id="2" corner="BOTTOM_RIGHT" language="java" name="product.Product" project="thoughtworks" 
+    file="/thoughtworks/src/product/Product.java" binary="false">    
+    <position height="-1" width="-1" x="804" y="542"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <interface id="3" corner="BOTTOM_RIGHT" language="java" name="product.ProductIntf" project="thoughtworks" 
+    file="/thoughtworks/src/product/ProductIntf.java" binary="false">    
+    <position height="-1" width="-1" x="374" y="261"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <class id="4" corner="BOTTOM_RIGHT" language="java" name="product.ProductItem" project="thoughtworks" 
+    file="/thoughtworks/src/product/ProductItem.java" binary="false">    
+    <position height="-1" width="-1" x="375" y="542"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <realization>    
+    <end type="SOURCE" nodeId="4"/>    
+    <end type="TARGET" nodeId="3"/>  
+  </realization>  
+  <generalization>    
+    <end type="SOURCE" nodeId="4"/>    
+    <end type="TARGET" nodeId="2"/>  
+  </generalization>  
+  <classifier-display autosize="true" package="true" initial-value="true" signature="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

@@ -1,0 +1,132 @@
+<class-diagram version="1.0.4" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" corner="BOTTOM_RIGHT" language="java" name="calculator.Category" project="thoughtworks" 
+    file="/thoughtworks/src/calculator/Category.java" binary="false">    
+    <position height="-1" width="-1" x="573" y="355"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="2" corner="BOTTOM_RIGHT" language="java" name="calculator.SalesTaxCalc" project="thoughtworks" 
+    file="/thoughtworks/src/calculator/SalesTaxCalc.java" binary="false">    
+    <position height="-1" width="-1" x="573" y="129"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="6" corner="BOTTOM_RIGHT" language="java" name="product.Product" project="thoughtworks" 
+    file="/thoughtworks/src/product/Product.java" binary="false">    
+    <position height="-1" width="-1" x="98" y="536"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="7" corner="BOTTOM_RIGHT" language="java" name="shoppingcart.ShoppingCart" project="thoughtworks" 
+    file="/thoughtworks/src/shoppingcart/ShoppingCart.java" binary="false">    
+    <position height="-1" width="-1" x="320" y="105"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <interface id="9" corner="BOTTOM_RIGHT" language="java" name="checkout.CheckOutCounterIntf" project="thoughtworks" 
+    file="/thoughtworks/src/checkout/CheckOutCounterIntf.java" binary="false">    
+    <position height="-1" width="-1" x="862" y="-36"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <interface id="11" corner="BOTTOM_RIGHT" language="java" name="product.ProductIntf" project="thoughtworks" 
+    file="/thoughtworks/src/product/ProductIntf.java" binary="false">    
+    <position height="-1" width="-1" x="98" y="41"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <interface id="12" corner="BOTTOM_RIGHT" language="java" name="calculator.CalculatorIntf" project="thoughtworks" 
+    file="/thoughtworks/src/calculator/CalculatorIntf.java" binary="false">    
+    <position height="-1" width="-1" x="573" y="-44"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <class id="13" corner="BOTTOM_RIGHT" language="java" name="product.ProductItem" project="thoughtworks" 
+    file="/thoughtworks/src/product/ProductItem.java" binary="false">    
+    <position height="-1" width="-1" x="98" y="306"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="14" corner="BOTTOM_RIGHT" language="java" name="checkout.Printer" project="thoughtworks" 
+    file="/thoughtworks/src/checkout/Printer.java" binary="false">    
+    <position height="-1" width="-1" x="862" y="371"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="15" corner="BOTTOM_RIGHT" language="java" name="checkout.CheckOutCounter" project="thoughtworks" 
+    file="/thoughtworks/src/checkout/CheckOutCounter.java" binary="false">    
+    <position height="-1" width="-1" x="862" y="161"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <interface id="16" corner="BOTTOM_RIGHT" language="java" name="shoppingcart.ShoppingCartIntf" project="thoughtworks" 
+    file="/thoughtworks/src/shoppingcart/ShoppingCartIntf.java" binary="false">    
+    <position height="-1" width="-1" x="320" y="-33"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <realization>    
+    <end type="SOURCE" nodeId="7"/>    
+    <end type="TARGET" nodeId="16"/>  
+  </realization>  
+  <generalization>    
+    <end type="SOURCE" nodeId="13"/>    
+    <end type="TARGET" nodeId="6"/>  
+  </generalization>  
+  <realization>    
+    <end type="SOURCE" nodeId="15"/>    
+    <end type="TARGET" nodeId="9"/>  
+  </realization>  
+  <association>    
+    <end type="SOURCE" nodeId="7" navigable="false">      
+      <attribute name="products"/>      
+      <multiplicity minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" nodeId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <end type="SOURCE" nodeId="15" navigable="false">      
+      <attribute name="calc"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization>    
+    <end type="SOURCE" nodeId="2"/>    
+    <end type="TARGET" nodeId="12"/>  
+  </realization>  
+  <realization>    
+    <end type="SOURCE" nodeId="13"/>    
+    <end type="TARGET" nodeId="11"/>  
+  </realization>  
+  <classifier-display autosize="true" package="true" initial-value="true" signature="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

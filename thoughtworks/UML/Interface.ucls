@@ -1,0 +1,52 @@
+<class-diagram version="1.0.4" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
+  <interface id="10" corner="BOTTOM_RIGHT" language="java" name="product.ProductIntf" project="thoughtworks" 
+    file="/thoughtworks/src/product/ProductIntf.java" binary="false">    
+    <position height="-1" width="-1" x="200" y="133"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <interface id="11" corner="BOTTOM_RIGHT" language="java" name="shoppingcart.ShoppingCartIntf" project="thoughtworks" 
+    file="/thoughtworks/src/shoppingcart/ShoppingCartIntf.java" binary="false">    
+    <position height="-1" width="-1" x="587" y="133"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <interface id="12" corner="BOTTOM_RIGHT" language="java" name="calculator.CalculatorIntf" project="thoughtworks" 
+    file="/thoughtworks/src/calculator/CalculatorIntf.java" binary="false">    
+    <position height="-1" width="-1" x="200" y="353"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <interface id="13" corner="BOTTOM_RIGHT" language="java" name="checkout.CheckOutCounterIntf" project="thoughtworks" 
+    file="/thoughtworks/src/checkout/CheckOutCounterIntf.java" binary="false">    
+    <position height="-1" width="-1" x="587" y="353"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <dependency>    
+    <end type="SOURCE" nodeId="13"/>    
+    <end type="TARGET" nodeId="11"/>  
+  </dependency>  
+  <dependency>    
+    <end type="SOURCE" nodeId="11"/>    
+    <end type="TARGET" nodeId="10"/>  
+  </dependency>  
+  <dependency>    
+    <end type="SOURCE" nodeId="12"/>    
+    <end type="TARGET" nodeId="10"/>  
+  </dependency>  
+  <classifier-display autosize="true" package="true" initial-value="true" signature="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
