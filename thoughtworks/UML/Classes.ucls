@@ -26,7 +26,7 @@
   </class>  
   <class id="7" corner="BOTTOM_RIGHT" language="java" name="shoppingcart.ShoppingCart" project="thoughtworks" 
     file="/thoughtworks/src/shoppingcart/ShoppingCart.java" binary="false">    
-    <position height="-1" width="-1" x="320" y="105"/>    
+    <position height="-1" width="-1" x="316" y="244"/>    
     <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
       <operations public="true" package="true" protected="true" private="true"/>    
@@ -88,18 +88,22 @@
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </interface>  
-  <realization>    
-    <end type="SOURCE" nodeId="7"/>    
-    <end type="TARGET" nodeId="16"/>  
-  </realization>  
-  <generalization>    
-    <end type="SOURCE" nodeId="13"/>    
-    <end type="TARGET" nodeId="6"/>  
-  </generalization>  
-  <realization>    
-    <end type="SOURCE" nodeId="15"/>    
-    <end type="TARGET" nodeId="9"/>  
-  </realization>  
+  <class id="17" corner="BOTTOM_RIGHT" language="java" name="store.AddToShoppingCart" project="thoughtworks" 
+    file="/thoughtworks/src/store/AddToShoppingCart.java" binary="false">    
+    <position height="-1" width="-1" x="337" y="120"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="18" corner="BOTTOM_RIGHT" language="java" name="store.SelectProduct" project="thoughtworks" 
+    file="/thoughtworks/src/store/SelectProduct.java" binary="false">    
+    <position height="-1" width="-1" x="336" y="636"/>    
+    <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
   <association>    
     <end type="SOURCE" nodeId="7" navigable="false">      
       <attribute name="products"/>      
@@ -108,6 +112,22 @@
     <end type="TARGET" nodeId="11" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <realization>    
+    <end type="SOURCE" nodeId="13"/>    
+    <end type="TARGET" nodeId="11"/>  
+  </realization>  
+  <association>    
+    <end type="SOURCE" nodeId="17" navigable="false">      
+      <attribute name="cart"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization>    
+    <end type="SOURCE" nodeId="15"/>    
+    <end type="TARGET" nodeId="9"/>  
+  </realization>  
   <association>    
     <end type="SOURCE" nodeId="15" navigable="false">      
       <attribute name="calc"/>      
@@ -117,12 +137,16 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <realization>    
+    <end type="SOURCE" nodeId="7"/>    
+    <end type="TARGET" nodeId="16"/>  
+  </realization>  
+  <generalization>    
+    <end type="SOURCE" nodeId="13"/>    
+    <end type="TARGET" nodeId="6"/>  
+  </generalization>  
+  <realization>    
     <end type="SOURCE" nodeId="2"/>    
     <end type="TARGET" nodeId="12"/>  
-  </realization>  
-  <realization>    
-    <end type="SOURCE" nodeId="13"/>    
-    <end type="TARGET" nodeId="11"/>  
   </realization>  
   <classifier-display autosize="true" package="true" initial-value="true" signature="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true"/>    

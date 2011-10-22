@@ -15,25 +15,40 @@
     binary="false">    
     <position height="-1" width="-1" x="518" y="307"/>  
   </package>  
+  <package id="5" language="java" name="store" project="thoughtworks" file="/thoughtworks/src/store" binary="false">    
+    <position height="44" width="112" x="654" y="160"/>  
+  </package>  
   <dependency>    
-    <end type="SOURCE" nodeId="4"/>    
+    <end type="SOURCE" nodeId="5"/>    
     <end type="TARGET" nodeId="3"/>  
   </dependency>  
   <dependency>    
     <end type="SOURCE" nodeId="2"/>    
     <end type="TARGET" nodeId="3"/>  
-  </dependency>  
-  <dependency>    
-    <end type="SOURCE" nodeId="2"/>    
-    <end type="TARGET" nodeId="1"/>  
   </dependency>  
   <dependency>    
     <end type="SOURCE" nodeId="1"/>    
     <end type="TARGET" nodeId="3"/>  
   </dependency>  
   <dependency>    
+    <end type="SOURCE" nodeId="4"/>    
+    <end type="TARGET" nodeId="3"/>  
+  </dependency>  
+  <dependency>    
     <end type="SOURCE" nodeId="2"/>    
     <end type="TARGET" nodeId="4"/>  
+  </dependency>  
+  <dependency>    
+    <end type="SOURCE" nodeId="2"/>    
+    <end type="TARGET" nodeId="1"/>  
+  </dependency>  
+  <dependency>    
+    <end type="SOURCE" nodeId="5"/>    
+    <end type="TARGET" nodeId="4"/>  
+  </dependency>  
+  <dependency>    
+    <end type="SOURCE" nodeId="5"/>    
+    <end type="TARGET" nodeId="2"/>  
   </dependency>  
   <classifier-display autosize="true" package="true" initial-value="false" signature="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true"/>    

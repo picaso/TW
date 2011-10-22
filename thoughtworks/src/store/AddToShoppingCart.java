@@ -10,15 +10,13 @@ import product.ProductIntf;
 import product.ProductItem;
 import shoppingcart.ShoppingCart;
 import shoppingcart.ShoppingCartIntf;
-import checkout.CheckOutCounter;
-import checkout.CheckOutCounterIntf;
 
 /**
- * @author Picaso
+ * @author Osaide Ogbeifun
  * 
  */
 public class AddToShoppingCart {
-	CheckOutCounterIntf counter = new CheckOutCounter();
+
 	ShoppingCartIntf cart = new ShoppingCart();
 
 	public ShoppingCartIntf add(ArrayList<String> lineItemList) {
@@ -58,7 +56,7 @@ public class AddToShoppingCart {
 		// scan the price token an item line.
 		double price = 0;
 		if (scanner.hasNextFloat()) {
-			price = scanner.nextFloat();			
+			price = scanner.nextFloat();
 		}
 		product.setName(itemDescription);
 		product.setPrice(price);

@@ -24,8 +24,7 @@ public class CheckOutCounter implements CheckOutCounterIntf {
 	 */
 	public void checkOut(ShoppingCartIntf cart) {
 		checkOutWithReceipt(cart);
-		
-	
+
 	}
 
 	/**
@@ -34,14 +33,14 @@ public class CheckOutCounter implements CheckOutCounterIntf {
 	protected void checkOutWithReceipt(ShoppingCartIntf cart) {
 		ArrayList<ProductIntf> products = cart.getProducts();
 		Printer printer = new Printer();
-		double tax = 0; 
+		double tax = 0;
 		System.out.println("Products");
 		resetCounter();
-		for (int i = 0; i < products.size(); i++) {
-			 tax =  calc.calcTax(products.get(i)) ;
+		for (ProductIntf product : products) {
+			tax = calc.calcTax(product);
 			addUpTax(tax);
-			addUpPrice(products.get(i).getCartPrice());
-			printer.printReceipt(products.get(i), tax);
+			addUpPrice(product.getCartPrice());
+			printer.printReceipt(product, tax);
 		}
 		printer.printTotal(getTax(), getTotalWithTax());
 	}
@@ -51,8 +50,8 @@ public class CheckOutCounter implements CheckOutCounterIntf {
 	 */
 	private void resetCounter() {
 
-		this.price =0;
-		this.totalTax=0;
+		this.price = 0;
+		this.totalTax = 0;
 	}
 
 	private double getTax() {
@@ -63,9 +62,7 @@ public class CheckOutCounter implements CheckOutCounterIntf {
 		return (totalTax + price);
 	}
 
-	
-
-	/** 
+	/**
 	 * @param price
 	 */
 	private void addUpPrice(double price) {
