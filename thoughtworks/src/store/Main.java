@@ -7,10 +7,6 @@ import java.util.ArrayList;
 
 import checkout.CheckOutCounter;
 import checkout.CheckOutCounterIntf;
-import product.ProductIntf;
-import product.ProductItem;
-import shoppingcart.ShoppingCart;
-import shoppingcart.ShoppingCartIntf;
 
 /**
  * @author Osaide Ogbeifun
