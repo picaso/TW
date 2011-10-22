@@ -8,28 +8,44 @@ import product.ProductIntf;
  * @author Osaide Ogbeifun
  *
  */
-final class Category  {
+public final class Category  {
+	
+	   private static final String IMPORTED_TOKEN = "imported";
+	 
+	     private static final List<String> EXEMPT_ITEMS_TOKENS = new ArrayList<String>();
+	    
+	     static {
+	         EXEMPT_ITEMS_TOKENS.add("book");
+	         EXEMPT_ITEMS_TOKENS.add("chocolate");
+	         EXEMPT_ITEMS_TOKENS.add("pills");
+	     }
 	/**
 	 * @param cat
 	 * @return boolean
 	 */
 	protected boolean checkCategory(ProductIntf item) {
-		String category[] = { "book", "food", "med" };
+	     
+	  String itemName = item.getName().toLowerCase();
+	     
+		 for (String exemptToken : EXEMPT_ITEMS_TOKENS) {
+	            if (itemName.toLowerCase().contains(exemptToken)) {
+	            	return true;
+	            }
 
-		// Convert Array to List
-		ArrayList<String> list = new ArrayList<String>(Arrays.asList(category));
-
-		// Sort the list
-		Collections.sort(list);
+	        }
+		return false;
+	}
+	protected boolean checkImport(ProductIntf item) {
+	        // verify if the item is imported.
+			 String itemName = item.getName().toLowerCase();
+	        if (itemName.toLowerCase().contains(IMPORTED_TOKEN)) {
+	        	return true;
+	        }
+	        return false;
+		 }
 
 		// Search for element in list
-		int index = Collections.binarySearch(list, item.getCategory().toLowerCase());
-		if (index >= 0) {
-			return true; //Found, so exempt
-		} else {
-			return false; //Not Found, no exempt
-		}
-
+		//int index = Collections.binarySearch(list, item.getCategory().toLowerCase());
+	
 	}
 
-}

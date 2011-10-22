@@ -31,7 +31,7 @@ public class CheckOutCounter implements CheckOutCounterIntf {
 	/**
 	 * @param cart
 	 */
-	public void checkOutWithReceipt(ShoppingCartIntf cart) {
+	protected void checkOutWithReceipt(ShoppingCartIntf cart) {
 		ArrayList<ProductIntf> products = cart.getProducts();
 		Printer printer = new Printer();
 		double tax = 0; 

@@ -16,9 +16,6 @@ public interface CheckOutCounterIntf {
 	 */
 	public void checkOut(ShoppingCartIntf cart);
 
-	/**
-	 * @param cart
-	 */
-	public void checkOutWithReceipt(ShoppingCartIntf cart);
+	
 
 }

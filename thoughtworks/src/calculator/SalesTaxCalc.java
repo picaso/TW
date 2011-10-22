@@ -16,20 +16,21 @@ public  class SalesTaxCalc implements CalculatorIntf{
 	 */
 	public double calcTax(ProductIntf product) {
 		double tax =0;
-		boolean isExempt = false;
+		boolean isExempt, isImport = false;
 		
 		Category category = new Category();
 		isExempt=category.checkCategory(product);
+		isImport=category.checkImport(product);
 		
 		int qty =product.getQuantity();
 
-		if (product.isImported()) {
+		if (isImport) {
 			tax=(qty*importTax(product.getCartPrice()));
 		}
 		if (!isExempt) {
 			tax=(qty*genSalesTax(product.getCartPrice()));
 		}
-		if (product.isImported() && !isExempt) {
+		if (isImport && !isExempt) {
 			tax=(qty*importAndGenTax(product.getCartPrice()));
 		}
 		return converter(tax);
