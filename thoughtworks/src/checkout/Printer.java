@@ -9,19 +9,8 @@ import product.ProductIntf;
  * @author Osaide Ogbeifun
  *
  */
-final class Printer {
-	
-	/**
-	 * @param product
-	 * @return printLabel
-	 */
-	private String labelProduct(ProductIntf product) {
-		if (product.isImported()) {
-			return "Imported " + product.getName();
-		}
-		return product.getName();
+public final class Printer {
 
-	}
 
 	/**
 	 * @param product
@@ -30,7 +19,7 @@ final class Printer {
 	protected void printReceipt(ProductIntf product, double tax) {
 
 		System.out.printf("%d %s: $%5.2f%n", product.getQuantity(),
-				labelProduct(product),
+				product.getName(),
 				product.getCartPrice() + tax);
 
 	}

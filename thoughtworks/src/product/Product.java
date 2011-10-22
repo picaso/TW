@@ -1,21 +1,13 @@
 package product;
 
-
 /**
  * @author Osaide Ogbeifun
  * 
  */
 public abstract class Product {
 
-	
-	private String category = null;
 	private String name = null;
 	private double price = 0;
-
-
-	public String getCategory() {
-		return category;
-	}
 
 	public String getName() {
 		return name;
@@ -24,13 +16,6 @@ public abstract class Product {
 	public double getPrice() {
 		return price;
 	}
-
-	/**
-	 * @param category
-	 */
-	public void setCategory(String category) {
-		this.category = category;
-	}	
 
 	/**
 	 * @param name
