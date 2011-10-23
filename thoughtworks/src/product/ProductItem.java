@@ -19,6 +19,6 @@ public class ProductItem extends Product implements ProductIntf {
 	}
 
 	public double getCartPrice() {
-		return quantity * getPrice();
+		return getQuantity() * getPrice();
 	}
 }

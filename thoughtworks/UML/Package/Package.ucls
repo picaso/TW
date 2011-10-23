@@ -8,7 +8,7 @@
     binary="false">    
     <position height="-1" width="-1" x="518" y="66"/>  
   </package>  
-  <package id="3" language="java" name="product" project="thoughtworks" file="/thoughtworks/src/product" binary="false">    
+  <package id="3" language="java" name="test" project="thoughtworks" file="/thoughtworks/test/test" binary="false">    
     <position height="-1" width="-1" x="135" y="307"/>  
   </package>  
   <package id="4" language="java" name="shoppingcart" project="thoughtworks" file="/thoughtworks/src/shoppingcart" 

@@ -1,6 +1,6 @@
 <class-diagram version="1.0.4" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
   realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
-  <package id="1" language="java" name="product" project="thoughtworks" file="/thoughtworks/src/product" binary="false">    
+  <package id="1" language="java" name="test" project="thoughtworks" file="/thoughtworks/test/test" binary="false">    
     <position height="-1" width="-1" x="374" y="59"/>  
   </package>  
   <class id="2" corner="BOTTOM_RIGHT" language="java" name="product.Product" project="thoughtworks" 
