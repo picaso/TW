@@ -4,7 +4,7 @@ package product;
  * @author Osaide Ogbeifun
  * 
  */
-public class ProductItem extends Product implements ProductIntf {
+public class CartItem extends Product implements ProductIntf {
 	private int quantity = 1; // default to one, assume they always need one.
 
 	public int getQuantity() {
