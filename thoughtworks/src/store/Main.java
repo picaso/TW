@@ -1,6 +1,7 @@
 package store;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -25,9 +26,29 @@ public class Main {
 		BufferedReader location = new BufferedReader(new InputStreamReader(
 				System.in));
 
-		System.out.printf("Please Input path to product list: ");
-		products = select.selectproducts(location.readLine());
-		checkout.checkOut(shoppingcart.add(products));
+		System.out.println("Welcome to Jmart, please type 'Exit' to quit");
+		System.out.printf("Hit Enter to continue. ");
+		String input = location.readLine();
+
+		do {
+			try {
+				System.out.println("Please Input path to product list: ");
+				input = location.readLine();
+				if (input.equalsIgnoreCase("Exit"))
+					break;
+				products = select.selectproducts(input);
+				checkout.checkOut(shoppingcart.add(products));
+				
+			}
+
+			catch (FileNotFoundException ex) {
+				//System.out.println(ex.toString());
+				System.err.println("File not found, Please try again");
+			}
+
+		} while (!input.equalsIgnoreCase("Exit"));
+		System.out.printf("Good Bye!");
+		System.exit(1);
 
 	}
 

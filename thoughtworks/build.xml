@@ -1,0 +1,77 @@
+<project name="ThoughtWorks Sales Tax Problem" default="run-test-data" basedir=".">
+
+	<!--
+        @author: Osaide Ogbeifun
+    -->
+
+	<!-- CHANGE THE VALUE OF THIS CONSTANT TO THE INPUT  -->
+	<property name="GROCERRY_LIST" value="${basedir}/inputs/input3.txt" />
+
+	<property name="dist" value="${basedir}/dist" />
+	<property name="bindir" value="${dist}/bin" />
+	<property name="srcdir" value="${basedir}/src" />
+	<property name="testsrcdir" value="${basedir}/test" />
+	<property name="libdir" value="${basedir}/lib" />
+
+	<target name="clean" description="Remove all the compiled classes.">
+		<delete dir="${dist}" />
+	</target>
+
+	<target name="compile" depends="clean" description="Compile all Java sources">
+		<mkdir dir="${bindir}" />
+		<javac source="1.6" srcdir="${srcdir}; ${testsrcdir}" destdir="${bindir}" deprecation="on">
+			<classpath>
+				<path location="${bindir}" />
+				<fileset dir="${libdir}">
+					<include name="*.jar" />
+				</fileset>
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="test" depends="compile" description="Run all tests">
+		<mkdir dir="${basedir}/dist/test-reports" />
+		<junit printsummary="yes" haltonfailure="no">
+			<formatter type="plain" />
+			<classpath>
+				<path location="${bindir}" />
+				<fileset dir="${libdir}">
+					<include name="*.jar" />
+				</fileset>
+			</classpath>
+			<batchtest fork="yes" todir="${basedir}/dist/test-reports">
+				<fileset dir="test">
+					<include name="**/*Test*.java" />
+				</fileset>
+			</batchtest>
+		</junit>
+	</target>
+
+	<macrodef name="view-invoice">
+		<attribute name="file" />
+		<sequential>
+			<antcall target="compile" />
+			<echo message="Executing @{file}'" />
+			<java classname="store.Main">
+
+				<classpath>
+					<pathelement location="${bindir}" />
+					<fileset dir="${libdir}">
+						<include name="*.jar" />
+					</fileset>
+				</classpath>
+			</java>
+		</sequential>
+	</macrodef>
+
+	<target name="run" description="Runs the file from GROCERRY_LIST property">
+		<view-invoice file="${GROCERRY_LIST}" />
+	</target>
+
+	<target name="run-test-data" depends="test" description="Runs the test data.">
+		<view-invoice file="${basedir}/inputs/input1.txt" />
+		<view-invoice file="${basedir}/inputs/input2.txt" />
+		<view-invoice file="${basedir}/inputs/input3.txt" />
+	</target>
+
+</project>

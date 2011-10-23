@@ -15,20 +15,7 @@ import org.junit.Test;
  */
 public class ShoppingCartTest {
 
-	/**
-	 * @throws java.lang.Exception
-	 */
-	@BeforeClass
-	public static void setUpBeforeClass() throws Exception {
-	}
-
-	/**
-	 * @throws java.lang.Exception
-	 */
-	@Before
-	public void setUp() throws Exception {
-	}
-
+	
 	/**
 	 * Test method for {@link shoppingcart.ShoppingCart#addProduct(product.ProductIntf)}.
 	 */

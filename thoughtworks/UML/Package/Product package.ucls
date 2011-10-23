@@ -19,8 +19,8 @@
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </interface>  
-  <class id="4" corner="BOTTOM_RIGHT" language="java" name="product.ProductItem" project="thoughtworks" 
-    file="/thoughtworks/src/product/ProductItem.java" binary="false">    
+  <class id="4" corner="BOTTOM_RIGHT" language="java" name="product.CartItem" project="thoughtworks" 
+    file="/thoughtworks/src/product/CartItem.java" binary="false">    
     <position height="-1" width="-1" x="375" y="542"/>    
     <display autosize="true" package="true" initial-value="true" signature="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
