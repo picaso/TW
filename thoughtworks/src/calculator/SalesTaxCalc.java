@@ -34,6 +34,7 @@ public  class SalesTaxCalc implements CalculatorIntf{
 			tax=(qty*importAndGenTax(product.getCartPrice()));
 		}
 		return converter(tax);
+		
 	}
 	
 

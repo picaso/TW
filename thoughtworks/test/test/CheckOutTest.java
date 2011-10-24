@@ -5,9 +5,21 @@ package test;
 
 import static org.junit.Assert.*;
 
-import org.junit.Before;
-import org.junit.BeforeClass;
+
 import org.junit.Test;
+
+import product.CartItem;
+import product.ProductIntf;
+
+import shoppingcart.ShoppingCart;
+import shoppingcart.ShoppingCartIntf;
+import static org.mockito.Mockito.*;
+
+import checkout.CheckOutCounter;
+import checkout.CheckOutCounterIntf;
+
+import calculator.CalculatorIntf;
+import calculator.SalesTaxCalc;
 
 /**
  * @author Picaso
@@ -15,34 +27,21 @@ import org.junit.Test;
  */
 public class CheckOutTest {
 
-	/**
-	 * @throws java.lang.Exception
-	 */
-	@BeforeClass
-	public static void setUpBeforeClass() throws Exception {
-	}
-
-	/**
-	 * @throws java.lang.Exception
-	 */
-	@Before
-	public void setUp() throws Exception {
-	}
 
 	/**
 	 * Test method for {@link checkout.CheckOutCounter#checkOut(shoppingcart.ShoppingCartIntf)}.
 	 */
 	@Test
 	public final void testCheckOut() {
-		fail("Not yet implemented"); // TODO
+		CalculatorIntf cal = mock(SalesTaxCalc.class);
+		ShoppingCartIntf cart = mock(ShoppingCart.class);
+		ProductIntf prd = mock(CartItem.class);
+		CheckOutCounterIntf checkout =new CheckOutCounter();
+		checkout.checkOut(cart);
+		
+		verify(cal).calcTax(eq(prd));
+		
 	}
 
-	/**
-	 * Test method for {@link checkout.CheckOutCounter#checkOutWithReceipt(shoppingcart.ShoppingCartIntf)}.
-	 */
-	@Test
-	public final void testCheckOutWithReceipt() {
-		fail("Not yet implemented"); // TODO
-	}
-
+	
 }

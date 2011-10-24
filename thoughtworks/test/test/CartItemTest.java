@@ -5,7 +5,12 @@ package test;
 
 import static org.junit.Assert.*;
 
+import java.util.Arrays;
+import java.util.Collection;
+
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
 import product.ProductIntf;
 import product.CartItem;
@@ -14,9 +19,28 @@ import product.CartItem;
  * @author Picaso
  * 
  */
+@RunWith(Parameterized.class)
 public class CartItemTest {
-	private int quantity = 5;
-	private int price = 4;
+	
+	private double price;
+	private int qty;
+	private double cart_price;
+
+	@Parameterized.Parameters
+	public static Collection<Object[]> data() {
+		Object[][] data = MockCartItems.MOCK_ITEM_LIST;
+		return Arrays.asList(data);
+	}
+
+	
+
+	public CartItemTest(int qty, String name, double price, double tax) {
+		
+		this.price = price;
+		this.qty = qty;
+		this.cart_price =price*qty;
+		
+	}
 
 	/**
 	 * Test method for {@link product.CartItem#getQuantity()}.
@@ -25,8 +49,8 @@ public class CartItemTest {
 	public final void testGetQuantity() {
 
 		ProductIntf prd = new CartItem();
-		prd.setQuantity(quantity);
-		assertTrue(prd.getQuantity() == quantity);
+		prd.setQuantity(qty);
+		assertTrue(prd.getQuantity() == qty);
 
 	}
 
@@ -37,8 +61,8 @@ public class CartItemTest {
 	public final void testSetQuantity() {
 
 		ProductIntf prd = new CartItem();
-		prd.setQuantity(quantity);
-		assertTrue(prd.getQuantity() == quantity);
+		prd.setQuantity(qty);
+		assertTrue(prd.getQuantity() == qty);
 	}
 
 	/**
@@ -48,9 +72,9 @@ public class CartItemTest {
 	public final void testGetCartPrice() {
 
 		ProductIntf prd = new CartItem();
-		prd.setQuantity(quantity);
+		prd.setQuantity(qty);
 		prd.setPrice(price);
-		assertTrue(prd.getCartPrice() == price * quantity);
+		assertTrue(prd.getCartPrice() == cart_price);
 	}
 
 }

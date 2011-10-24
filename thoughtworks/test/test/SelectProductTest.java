@@ -15,21 +15,20 @@ import org.junit.Test;
 import store.SelectProduct;
 
 /**
- * @author Osaide Ogbeifun
- * This Tests the input file parser to make sure 
- * it returns the right items
+ * @author Osaide Ogbeifun This Tests the input file parser to make sure it
+ *         returns the right items
  * 
  */
 public class SelectProductTest {
-	private static final ArrayList<String> PRODUCT_LIST =new ArrayList<String>();;
+	private static final ArrayList<String> PRODUCT_LIST = new ArrayList<String>();;
 	static {
-		
+
 		PRODUCT_LIST.add("1 book at 12.49");
 		PRODUCT_LIST.add("1 music CD at 14.99");
 		PRODUCT_LIST.add("1 chocolate bar at 0.85");
 	}
-	
-	//File path to test files.
+
+	// File path to test files.
 	private static File INPUT_DIR;
 	static {
 		try {
@@ -57,11 +56,12 @@ public class SelectProductTest {
 		SelectProduct prd = new SelectProduct();
 		productList = prd.selectproducts(INPUT_DIR.getPath() + "/input1.txt");
 		for (String product : productList) {
-			assertEquals(product,PRODUCT_LIST.get(index));
+			assertEquals(product, PRODUCT_LIST.get(index));
 			index++;
 
 		}
-		assertTrue("There should be 3 elements in input 1", productList.size()==3); // TODO
+		assertTrue("There should be 3 elements in input 1",
+				productList.size() == 3);
 	}
 
 }

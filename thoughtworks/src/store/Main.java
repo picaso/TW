@@ -38,11 +38,11 @@ public class Main {
 					break;
 				products = select.selectproducts(input);
 				checkout.checkOut(shoppingcart.add(products));
-				
+
 			}
 
 			catch (FileNotFoundException ex) {
-				//System.out.println(ex.toString());
+				// System.out.println(ex.toString());
 				System.err.println("File not found, Please try again");
 			}
 
