@@ -16,12 +16,29 @@ import shoppingcart.ShoppingCartIntf;
  */
 public class CheckOutCounter implements CheckOutCounterIntf {
 
-	private double totalTax, price = 0;
 	CalculatorIntf calc = new SalesTaxCalc();
+	private double totalTax, price = 0;
+
+	/**
+	 * @param price
+	 */
+	private void addUpPrice(double price) {
+		this.price += price;
+
+	}
+
+	/**
+	 * @param tax
+	 */
+	private void addUpTax(double tax) {
+		this.totalTax += tax;
+
+	}
 
 	/**
 	 * @param cart
 	 */
+	@Override
 	public void checkOut(ShoppingCartIntf cart) {
 		ArrayList<ProductIntf> products = cart.getProducts();
 		Printer printer = new Printer();
@@ -38,15 +55,6 @@ public class CheckOutCounter implements CheckOutCounterIntf {
 
 	}
 
-	/**
-	 * 
-	 */
-	private void resetCounter() {
-
-		this.price = 0;
-		this.totalTax = 0;
-	}
-
 	private double getTax() {
 		return totalTax;
 	}
@@ -56,19 +64,12 @@ public class CheckOutCounter implements CheckOutCounterIntf {
 	}
 
 	/**
-	 * @param price
+	 * 
 	 */
-	private void addUpPrice(double price) {
-		this.price += price;
+	private void resetCounter() {
 
-	}
-
-	/**
-	 * @param tax
-	 */
-	private void addUpTax(double tax) {
-		this.totalTax += tax;
-
+		this.price = 0;
+		this.totalTax = 0;
 	}
 
 }

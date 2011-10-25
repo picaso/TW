@@ -12,8 +12,8 @@ import java.util.ArrayList;
  */
 public class SelectProduct {
 
-	private FileReader fileReader;
 	private BufferedReader bufferedReader;
+	private FileReader fileReader;
 
 	public ArrayList<String> selectproducts(String filePath)
 			throws IOException, FileNotFoundException {

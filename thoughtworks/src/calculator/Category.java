@@ -9,9 +9,9 @@ import product.ProductIntf;
  */
 public final class Category {
 
-    private static final String IMPORTED_TOKEN = "imported";
-
     private static final List<String> EXEMPT_ITEMS_TOKENS = new ArrayList<String>();
+
+    private static final String IMPORTED_TOKEN = "imported";
 
     static {
         EXEMPT_ITEMS_TOKENS.add("book");

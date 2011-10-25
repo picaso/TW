@@ -6,7 +6,7 @@ package test;
 import product.ProductIntf;
 
 /**
- * @author Picaso
+ * @author  Osaide Ogbeifun
  * 
  */
 public class MockCartItems implements ProductIntf{
@@ -29,7 +29,7 @@ public class MockCartItems implements ProductIntf{
 	 */
 	@Override
 	public double getCartPrice() {
-		// TODO Auto-generated method stub
+		
 		return 0;
 	}
 
@@ -38,7 +38,7 @@ public class MockCartItems implements ProductIntf{
 	 */
 	@Override
 	public String getName() {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
@@ -47,7 +47,7 @@ public class MockCartItems implements ProductIntf{
 	 */
 	@Override
 	public double getPrice() {
-		// TODO Auto-generated method stub
+		
 		return 0;
 	}
 
@@ -56,7 +56,7 @@ public class MockCartItems implements ProductIntf{
 	 */
 	@Override
 	public int getQuantity() {
-		// TODO Auto-generated method stub
+		
 		return 0;
 	}
 
@@ -65,7 +65,7 @@ public class MockCartItems implements ProductIntf{
 	 */
 	@Override
 	public void setName(String name) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
@@ -74,7 +74,7 @@ public class MockCartItems implements ProductIntf{
 	 */
 	@Override
 	public void setPrice(double price) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
@@ -83,7 +83,7 @@ public class MockCartItems implements ProductIntf{
 	 */
 	@Override
 	public void setQuantity(int quantity) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 

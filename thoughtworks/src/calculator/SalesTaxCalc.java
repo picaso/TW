@@ -14,6 +14,7 @@ public  class SalesTaxCalc implements CalculatorIntf{
 	 * @param product
 	 * @return
 	 */
+	@Override
 	public double calcTax(ProductIntf product) {
 		double tax =0;
 		boolean isExempt, isImport = false;
@@ -40,7 +41,7 @@ public  class SalesTaxCalc implements CalculatorIntf{
 
 	/**
 	 * @param price
-	 * @return
+	 * @return price
 	 */
 	private double converter(double price) {
 		return Math.ceil(price / 0.05) * 0.05;
@@ -48,7 +49,7 @@ public  class SalesTaxCalc implements CalculatorIntf{
 
 	/**
 	 * @param price
-	 * @return
+	 * @return tax
 	 */
 	private double genSalesTax(double price) {
 		double TaxInd = 0.1;
@@ -58,7 +59,7 @@ public  class SalesTaxCalc implements CalculatorIntf{
 
 	/**
 	 * @param price
-	 * @return
+	 * @return tax
 	 */
 	private double importAndGenTax(double price) {
 		double TaxInd = 0.15;
@@ -68,7 +69,7 @@ public  class SalesTaxCalc implements CalculatorIntf{
 
 	/**
 	 * @param price
-	 * @return
+	 * @return tax
 	 */
 	private double importTax(double price) {
 		double TaxInd = 0.05;

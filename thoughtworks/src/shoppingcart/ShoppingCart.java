@@ -17,11 +17,13 @@ public class ShoppingCart  implements ShoppingCartIntf{
 	/**
 	 * @param ProductItem
 	 */
+	@Override
 	public void addProduct(ProductIntf product) {
 		// product = calc.calcTax(product);
 		products.add(product);
 	}
 
+	@Override
 	public ArrayList<ProductIntf> getProducts() {
 		return products;
 	}

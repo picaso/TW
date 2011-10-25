@@ -16,21 +16,21 @@ import product.ProductIntf;
 import product.CartItem;
 
 /**
- * @author Picaso
+ * @author Osaide Ogbeifun
  * 
  */
 @RunWith(Parameterized.class)
 public class CartItemTest {
 	
-	private double price;
-	private int qty;
-	private double cart_price;
-
 	@Parameterized.Parameters
 	public static Collection<Object[]> data() {
 		Object[][] data = MockCartItems.MOCK_ITEM_LIST;
 		return Arrays.asList(data);
 	}
+	private double cart_price;
+	private double price;
+
+	private int qty;
 
 	
 
@@ -40,6 +40,18 @@ public class CartItemTest {
 		this.qty = qty;
 		this.cart_price =price*qty;
 		
+	}
+
+	/**
+	 * Test method for {@link product.CartItem#getCartPrice()}.
+	 */
+	@Test
+	public final void testGetCartPrice() {
+
+		ProductIntf prd = new CartItem();
+		prd.setQuantity(qty);
+		prd.setPrice(price);
+		assertTrue(prd.getCartPrice() == cart_price);
 	}
 
 	/**
@@ -63,18 +75,6 @@ public class CartItemTest {
 		ProductIntf prd = new CartItem();
 		prd.setQuantity(qty);
 		assertTrue(prd.getQuantity() == qty);
-	}
-
-	/**
-	 * Test method for {@link product.CartItem#getCartPrice()}.
-	 */
-	@Test
-	public final void testGetCartPrice() {
-
-		ProductIntf prd = new CartItem();
-		prd.setQuantity(qty);
-		prd.setPrice(price);
-		assertTrue(prd.getCartPrice() == cart_price);
 	}
 
 }

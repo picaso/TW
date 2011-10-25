@@ -16,7 +16,7 @@ import calculator.CalculatorIntf;
 import calculator.SalesTaxCalc;
 
 /**
- * @author Picaso
+ * @author Osaide Ogbeifun
  * 
  */
 @RunWith(Parameterized.class)
@@ -51,12 +51,15 @@ public class CalculatorTest {
 	public final void testCalcTax() {
 		CalculatorIntf calc = new SalesTaxCalc();
 		ProductIntf product = new MockCartItems(){
+			@Override
 			public String getName(){
 				return name;
 			}
+			@Override
 			public int getQuantity(){
 				return qty;
 			}
+			@Override
 			public double getPrice(){
 				return price;
 			}

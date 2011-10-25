@@ -1,6 +1,7 @@
 package store;
 
 import java.io.BufferedReader;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -26,9 +27,14 @@ public class Main {
 		BufferedReader location = new BufferedReader(new InputStreamReader(
 				System.in));
 
-		System.out.println("Welcome to Jmart, please type 'Exit' to quit");
-		System.out.printf("Hit Enter to continue. ");
+		System.out
+				.println("Welcome to Jmart, please Hit Enter for more instructions");
+
 		String input = location.readLine();
+		System.out
+				.println("Enter the file path to the input file \"C:\\Folder\\input1.txt\" or \nfor *nix/mac users: \"/folder/input.txt\"\n  ");
+
+		System.out.println("To exit, just type \"Exit\"\n");
 
 		do {
 			try {
