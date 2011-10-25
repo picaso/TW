@@ -6,9 +6,10 @@ It also allows for teams to work independently on horizontal sides of the interf
 The Interfaces are broken down into 
 
 Interfaces:
-Product – a product being bought.
-ShoppingCart – products being bought are stored
-Checkout- where a cart is brought for their products to be scanned
+Product – a product being bought extends to a cartItem to add Quantity and Price.
+ShoppingCart – products being bought are stored here as cartItems 
+Checkout- where a cart is brought for their products to be scanned, here and only here is 
+the tax calculated and returned as a double with the receipt
 Calculator- calculates the taxes and total for products being checked out.
 
 Unit Test:
@@ -18,6 +19,7 @@ method being tested from calling external classes, as this would not be a proper
 but more of an integration test.
 
 Mockito [http://code.google.com/p/mockito/] was used to create mock objects for unit testing.
+(needs to be added to your build path in your IDE if you want to run it from an IDE)
 
 Build:
 Final unit Tests and the final JAR file are created using ant builder. 
