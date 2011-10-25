@@ -2,7 +2,7 @@ My approach to solving the Sales Tax Question was the design by interface approa
 Classes implementing an interface are packaged together with other supporting classes 
 to help carry out specific tasks. This allows for easy extensibility, reduces dependency 
 and also allows anyone fairly new to the program modify it relatively easy.
-It also allows for teams to work independently on horizontal sides of the interface parallel.
+It also allows for teams to work independently on horizontal sides of the interface parallely.
 The Interfaces are broken down into 
 
 Interfaces:
