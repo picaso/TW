@@ -13,7 +13,7 @@ Calculator- calculates the taxes and total for products being checked out.
 
 Unit Test:
 Unit test was performed for every interface implemented. To effectively test each interface, 
-stubs and mock objects (mocking needed classes or objects) where created. This prevents each 
+stubs and mock objects (mocking needed classes or objects) were created. This prevents each 
 method being tested from calling external classes, as this would not be a proper unit test 
 but more of an integration test.
 
@@ -23,15 +23,14 @@ Mockito [http://code.google.com/p/mockito/] was used to create mock objects for 
 Build:
 Final unit Tests and the final JAR file are created using ant builder. 
 
-To build and run package, go to the project base directory (where the build.xml file is) and run ant
+To build and run the package, go to the project base directory (were the build.xml file is) and run ant
 >>$ ant
-It will run all the Unit tests, build the classes and create a JAR file SalesTax.jar and print out instruction on how and where to run the jar file.
+It will run all the Unit tests, build the classes and create a JAR file SalesTax.jar and print out instructions on how and where to run the jar file.
 
 To Run:
 >>$ cd jar
 >>$ java –jar SalesTax.jar
 
 Other Files:
-UML designs are in the Base Directory/UML it is broken down from package relationship, to Interface 
-relationships to relationships within the interfaces (for interfaces with more than one class) and 
-finally one with all the classes
+UML designs are in the Base Directory/UML; it is broken down from package relationship, to relationships between the Interfaces
+to relationships within the interfaces (for interfaces with more than one class) and finally to one with all the classes
