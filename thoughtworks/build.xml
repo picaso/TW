@@ -1,11 +1,9 @@
-<project name="ThoughtWorks Sales Tax Problem" default="test" basedir=".">
+<project name="ThoughtWorks Sales Tax Problem" default="main" basedir=".">
 
 	<!--
         @author: Osaide Ogbeifun
     -->
 
-	<!-- CHANGE THE VALUE OF THIS CONSTANT TO THE INPUT  -->
-	<property name="GROCERRY_LIST" value="${basedir}/inputs/input3.txt" />
 
 	<property name="dist" value="${basedir}/dist" />
 	<property name="bindir" value="${basedir}/bin" />
@@ -26,7 +24,7 @@
 		<mkdir dir="${jar.dir}" />
 		<mkdir dir="${bindir}" />
 
-		<javac source="1.6" srcdir="${srcdir}; ${testsrcdir}" destdir="${bindir}" deprecation="on">
+		<javac source="1.6" srcdir="${srcdir}; ${testsrcdir}" destdir="${bindir}" deprecation="on" includeantruntime="false">
 			<classpath>
 				<path location="${bindir}" />
 				<fileset dir="${libdir}">
@@ -37,7 +35,7 @@
 	</target>
 
 	<target name="jar" depends="compile">
-		<jar destfile="${jar.dir}/TW.jar" basedir="${bindir}">
+		<jar destfile="${jar.dir}/SalesTax.jar" basedir="${bindir}">
 			<manifest>
 				<attribute name="Main-Class" value="${main-class}" />
 			</manifest>
@@ -60,15 +58,20 @@
 				</fileset>
 			</batchtest>
 		</junit>
+
 	</target>
 
-	<target name="run" depends="jar">
-		<antcall target="test">
 
-		</antcall>
-		<java jar="${jar.dir}/TW.jar" fork="true" />
-	</target>
-	<target name="main" depends="run">
-		<echo message="main target completed.." />
+	<target name="main" depends="test">
+		<echo message="===================================" />
+		<echo message="README!" />
+		<echo message="===================================" />
+		<echo message="To Run this file, go to ${jar.dir} "/>
+		<echo message="and put in command 'java -jar SalesTax.jar' " />
+		<echo message="===================================" />
+		<echo message="JUNIT TEST OUTPUT" />
+		<echo message="===================================" />
+		<echo message="Test output directory: ${basedir}/dist/test-reports" />
+		<echo message="===================================" />
 	</target>
 </project>

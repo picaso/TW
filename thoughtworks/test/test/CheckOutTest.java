@@ -17,15 +17,6 @@ import org.junit.runners.Parameterized;
 
 import product.ProductIntf;
 import shoppingcart.ShoppingCartIntf;
-<<<<<<< HEAD
-=======
-import static org.mockito.Mockito.*;
-
-import checkout.CheckOutCounter;
-import checkout.CheckOutCounterIntf;
-import checkout.Printer;
-
->>>>>>> ...
 import calculator.CalculatorIntf;
 import calculator.SalesTaxCalc;
 import checkout.CheckOutCounter;
@@ -64,7 +55,6 @@ public class CheckOutTest {
 	@Test
 	public final void testCheckOut() {
 		CalculatorIntf cal = mock(SalesTaxCalc.class);
-<<<<<<< HEAD
 
 		final ProductIntf product = new MockCartItems() {
 			@Override
@@ -105,15 +95,6 @@ public class CheckOutTest {
 		assertEquals("Method salesTaxCalc not Called", true,
 				cal.calcTax(product) == tax);
 
-=======
-		ShoppingCartIntf cart = mock(ShoppingCart.class);
-		Printer print = mock(Printer.class);
-		CheckOutCounterIntf checkout =new CheckOutCounter();
-		checkout.checkOut(cart);
-		
-	//	verify(print).;
-		
->>>>>>> ...
 	}
 
 }

@@ -17,12 +17,10 @@ import checkout.CheckOutCounterIntf;
 public class Main {
 	public static void main(String[] args) throws IOException {
 
-		ArrayList<String> products = new ArrayList<String>();
+		
 
 		SelectProduct select = new SelectProduct();
 		CheckOutCounterIntf checkout = new CheckOutCounter();
-
-		AddToShoppingCart shoppingcart = new AddToShoppingCart();
 
 		BufferedReader location = new BufferedReader(new InputStreamReader(
 				System.in));
@@ -38,22 +36,24 @@ public class Main {
 
 		do {
 			try {
-				System.out.println("Please Input path to product list: ");
+				System.out.println("\nPlease Input path to product list or type \"Exit\" to quit: ");
 				input = location.readLine();
 				if (input.equalsIgnoreCase("Exit"))
 					break;
+				ArrayList<String> products = new ArrayList<String>();
+				AddToShoppingCart shoppingcart = new AddToShoppingCart();
 				products = select.selectproducts(input);
 				checkout.checkOut(shoppingcart.add(products));
-
+				products = null;
 			}
 
 			catch (FileNotFoundException ex) {
-				// System.out.println(ex.toString());
+				
 				System.err.println("File not found, Please try again");
 			}
 
 		} while (!input.equalsIgnoreCase("Exit"));
-		System.out.printf("Good Bye!");
+		System.out.println("Good Bye!");
 		System.exit(1);
 
 	}

@@ -49,7 +49,7 @@ public class SelectProductTest {
 	public final void testSelectproducts() throws FileNotFoundException,
 			IOException {
 
-		// Create a container to store data
+		
 		ArrayList<String> productList = new ArrayList<String>();
 		int index = 0;
 		SelectProduct prd = new SelectProduct();

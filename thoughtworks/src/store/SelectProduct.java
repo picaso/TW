@@ -20,7 +20,7 @@ public class SelectProduct {
 
 		ArrayList<String> lineItems = new ArrayList<String>();
 
-		fileReader = new FileReader(filePath);
+		fileReader = new FileReader(filePath.trim());
 
 		bufferedReader = new BufferedReader(fileReader);
 		String currentLine = null;

@@ -52,6 +52,7 @@ public class CheckOutCounter implements CheckOutCounterIntf {
 			printer.printReceipt(product, tax);
 		}
 		printer.printTotal(getTax(), getTotalWithTax());
+		
 
 	}
 
