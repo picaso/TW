@@ -1,23 +1,23 @@
 Testsuite: test.CartItemTest
-Tests run: 27, Failures: 0, Errors: 0, Time elapsed: 0.214 sec
+Tests run: 27, Failures: 0, Errors: 0, Time elapsed: 0.418 sec
 
-Testcase: testGetCartPrice[0] took 0.007 sec
+Testcase: testGetCartPrice[0] took 0.051 sec
 Testcase: testGetQuantity[0] took 0 sec
-Testcase: testSetQuantity[0] took 0.004 sec
-Testcase: testGetCartPrice[1] took 0.001 sec
-Testcase: testGetQuantity[1] took 0.001 sec
+Testcase: testSetQuantity[0] took 0 sec
+Testcase: testGetCartPrice[1] took 0 sec
+Testcase: testGetQuantity[1] took 0 sec
 Testcase: testSetQuantity[1] took 0 sec
 Testcase: testGetCartPrice[2] took 0 sec
-Testcase: testGetQuantity[2] took 0 sec
+Testcase: testGetQuantity[2] took 0.005 sec
 Testcase: testSetQuantity[2] took 0 sec
 Testcase: testGetCartPrice[3] took 0 sec
 Testcase: testGetQuantity[3] took 0 sec
 Testcase: testSetQuantity[3] took 0 sec
 Testcase: testGetCartPrice[4] took 0 sec
-Testcase: testGetQuantity[4] took 0.001 sec
+Testcase: testGetQuantity[4] took 0 sec
 Testcase: testSetQuantity[4] took 0 sec
 Testcase: testGetCartPrice[5] took 0.003 sec
-Testcase: testGetQuantity[5] took 0.001 sec
+Testcase: testGetQuantity[5] took 0 sec
 Testcase: testSetQuantity[5] took 0 sec
 Testcase: testGetCartPrice[6] took 0 sec
 Testcase: testGetQuantity[6] took 0 sec
@@ -26,5 +26,5 @@ Testcase: testGetCartPrice[7] took 0 sec
 Testcase: testGetQuantity[7] took 0 sec
 Testcase: testSetQuantity[7] took 0 sec
 Testcase: testGetCartPrice[8] took 0 sec
-Testcase: testGetQuantity[8] took 0 sec
+Testcase: testGetQuantity[8] took 0.001 sec
 Testcase: testSetQuantity[8] took 0 sec
