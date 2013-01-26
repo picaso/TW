@@ -17,19 +17,20 @@ stubs and mock objects (mocking needed classes or objects) were created. This pr
 method being tested from calling external classes, as this would not be a proper unit test 
 but more of an integration test.
 
-[Mockito] (http://code.google.com/p/mockito/) was used to create mock objects for unit testing.
-(needs to be added to your build path in your IDE if you want to run it from an IDE)
+<pre>[Mockito] (http://code.google.com/p/mockito/) was used to create mock objects for unit testing.
+(needs to be added to your build path in your IDE if you want to run it from an IDE)</pre>
 
 ## Build:
 Final unit Tests and the final JAR file are created using ant builder. 
 
-To build and run the package, go to the project base directory (were the build.xml file is) and run ant
-`>>$ ant`
+To build and run the package, go to the project base directory (were the build.xml file is) and run ant <br />
+`>>$ ant`<br />
 It will run all the Unit tests, build the classes and create a JAR file SalesTax.jar and print out instructions on how and where to run the jar file.
 
 ## To Run:
 `>>$ cd jar`
-`>>$ java –jar SalesTax.jar'
+<br />
+`>>$ java –jar SalesTax.jar`
 
 ## Other Files:
 UML designs are in the Base Directory/UML; it is broken down from package relationship, to relationships between the Interfaces
