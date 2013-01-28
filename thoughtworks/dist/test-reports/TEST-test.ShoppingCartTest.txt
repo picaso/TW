@@ -1,5 +1,0 @@
-Testsuite: test.ShoppingCartTest
-Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.368 sec
-
-Testcase: testAddProduct took 0.335 sec
-Testcase: testGetProducts took 0 sec
